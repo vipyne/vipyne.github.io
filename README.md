@@ -16,7 +16,7 @@ Freelance AfterEffects Animator: Prepared graphics for on-air content for Fuse N
 Video Editor / Visual Effects: Edited and assembled Adult Swim’s animated series “Assy McGee” through all stages of production. Integrated artistic vision and technical skills to create compelling effects and graphics for episodes and shows in development.
 
 ##PROJECTS
-####[webgLOL](https://github.com/vipyne/webgLOL): WebGL from  “hello triangle” to a spinning cube.
+####[webgLOL](https://github.com/vipyne/webgLOL): WebGL from “hello triangle” to a spinning cube.
 ####[targa-imaging](https://github.com/vipyne/targa-imaging): Translate any file type into a targa image.
 ####[giffy](https://github.com/vipyne/giffy): An innocuous venture into steganography via gif files.
 
@@ -30,5 +30,3 @@ Introduction to C/C++ and Intermediate C++ Programming
 ####Dev Bootcamp  2013
 Intensive nine week program covering full stack web development.
 ####Rhode Island School of Design  2001 - 2005
-BFA in Film/Animation/Video
-English Concentration
