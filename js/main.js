@@ -19,9 +19,6 @@ var sWidth = 435 / scale;
 var sHeight = 260 / scale;
 var sRadius = 6 / scale;
 var sTextSize = 314 / scale;
-// var sTextSize = 320 / scale;
-// var rows = 15;
-// var cols = 26;
 var rows = 11;
 var cols = 19;
 
@@ -295,22 +292,24 @@ var gifPicLinks = (function() {
       imageData[i] = 174;
       imageData[i + 1] = 93;
       imageData[i + 2] = 198;
-      imageData[i + 3] = 155;
+      imageData[i + 3] = 100;
     }
     repoImageCanvasContext.putImageData(imgData, 0, 0);
   };
 
   var hovering = function(hyperlink) {
     addEvent('mouseover', hyperlink, function(){
+      gifHolder.className = 'gif';
+      repoImageCanvas.className = 'filter-canvas';
       document.getElementsByClassName('gif-holder')[0].style.visibility = 'visible';
       gifHolder.src = linkPics(hyperlink);
       gifHolder.style.visibility = 'visible';
       makeImageTheSource(hyperlink);
     });
     addEvent('mouseout', hyperlink, function(){
-      // gifHolder.style.visibility = 'hidden';
-      // gifHolder.className = 'gif fadeout';
-      // gifHolder.src = '';
+      gifHolder.className = 'gif fadeout';
+      repoImageCanvas.className = 'filter-canvas fadeout';
+      setTimeout
     });
   };
 

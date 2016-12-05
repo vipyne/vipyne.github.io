@@ -144,15 +144,17 @@ img {
 }
 
 .fadeout {
-  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
   animation-name: fade;
 }
 
 @keyframes fade {
   from {
-    opacity: 1.0;
+    opacity: 1;
   }
   to {
-    opacity: 0.0
+    opacity: 0;
   }
 }
