@@ -308,7 +308,7 @@ var gifPicLinks = (function() {
     });
     addEvent('mouseout', hyperlink, function(){
       gifHolder.className = 'gif fadeout';
-      repoImageCanvas.className = 'filter-canvas fadeout';
+      repoImageCanvas.className = 'filter-canvas canvas-fadeout';
       setTimeout
     });
   };

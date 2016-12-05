@@ -143,18 +143,40 @@ img {
   color: #5b4193;
 }
 
+.canvas-fadeout {
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-name: canvasfade;
+}
+
+@keyframes canvasfade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .fadeout {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-name: fade;
 }
 
 @keyframes fade {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  15% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
