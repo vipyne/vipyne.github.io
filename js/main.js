@@ -241,7 +241,7 @@ var hover = (function(){
     hoverEvent(github)
     hoverEvent(twitter)
     hoverEvent(linkedin)
-    // hoverEvent(instagram)
+    hoverEvent(instagram)
     hoverEvent(tumblr)
     // $('.social-media').css('visibility', 'visible')
   }
