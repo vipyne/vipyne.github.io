@@ -1,11 +1,23 @@
 var hiNerds = (function(){
-  console.log('hi nerds.  your reward for snooping here is a link to my super secret tumblr: http://gemintheruff.tumblr.com/');
-  console.log('also, i\'m silly: http://playvideo.herokuapp.com/');
-  console.log('check back soon for some sweet ascii art');
+  console.log('');
+  console.log('congratulations!');
+  console.log('');
+  console.log('your reward for snooping here is a link to my super secret old tumblr:');
+  console.log('http://gemintheruff.tumblr.com/');
+  console.log('');
+  console.log('also, i\'m silly:');
+  console.log('https://vipyne.github.io/getUserMedia_play/');
+  console.log('');
+  // console.log('check back soon for some sweet ascii art');
+
+  // ode to C
+  return 0;
 })
 
 var all = (function(window, document, undefined){
-console.log('function hiNerds')
+  console.log('');
+  console.log('function hiNerds');
+  console.log('');
 /////////////////////////////
 
 window.location = '#';
@@ -341,17 +353,17 @@ var waitTime = 1500;
 var secondWaitTime = 1500;
 
 setTimeout( function subliminalMessage() {
-  window.location = '#                                                                                       hey';
+  window.location = '#                                                                              hey, i\'m stuck in the internet...';
   setTimeout( function removeSubliminalMessage() {
     window.location = '#';
     setTimeout( function secondMessage() {
-      window.location = '#                                                                         i\'m stuck in the internet';
+      window.location = '#                                                                              ...help me escape...';
       setTimeout( function removeSecondSubliminalMessage() {
         window.location = '#';
         setTimeout( function secondMessage() {
-          window.location = '#                                                                              help me escape!';
+          window.location = '#                                                                              ...open the console!';
           setTimeout( function removeSecondSubliminalMessage() {
-            window.location = '#';
+            // window.location = '#';
           }, 3000);
         }, waitTime);
       }, 3000);
