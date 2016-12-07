@@ -191,7 +191,8 @@ for (var i = 0, cPixelLength = cPixel.length; i+4 < cPixelLength; i += 4) {
   cPixel[i + 1] = 229;
   cPixel[i + 2] = 229;
   cPixel[i + 3] = Math.abs(255 - cPixel[i + 3]); // only show the ones we want
-} bottomCornerCanvasContext.putImageData(cornerPixels, 0, 0);
+}
+bottomCornerCanvasContext.putImageData(cornerPixels, 0, 0);
 
 // L I N K S ////////////////
 /////////////////////////////
