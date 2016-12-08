@@ -350,27 +350,15 @@ gifPicLinks.allLinks();
 // S U B L I M I N A L //////
 /////////////////////////////
 /////////////////////////////
-var waitTime = 1500;
-var secondWaitTime = 1500;
-
 setTimeout( function subliminalMessage() {
-  window.location = '#                                                                              hey, i\'m stuck in the internet...';
+  window.location = '#                                                                              hey, there...';
   setTimeout( function removeSubliminalMessage() {
     window.location = '#';
     setTimeout( function secondMessage() {
-      window.location = '#                                                                              ...help me escape...';
-      setTimeout( function removeSecondSubliminalMessage() {
-        window.location = '#';
-        setTimeout( function secondMessage() {
-          window.location = '#                                                                              ...open the console!';
-          setTimeout( function removeSecondSubliminalMessage() {
-            // window.location = '#';
-          }, 3000);
-        }, waitTime);
-      }, 3000);
-    }, secondWaitTime);
+      window.location = '#                                                                              ...open the console!';
+    }, 1200);
   }, 2000);
-}, 6000);
+}, 4000);
 
 /////////////////////////////
 })(window, document)
