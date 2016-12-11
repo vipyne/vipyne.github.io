@@ -256,7 +256,6 @@ var hover = (function(){
     hoverEvent(linkedin)
     hoverEvent(instagram)
     hoverEvent(tumblr)
-    // $('.social-media').css('visibility', 'visible')
   }
 
   return {
@@ -270,11 +269,6 @@ hover.allIcons()
 // G I F S //////////////////
 /////////////////////////////
 /////////////////////////////
-
-// var repoImageCanvas = document.getElementById('repo-image-canvas');
-// var repoImageCanvasContext = repoImageCanvas.getContext('2d');
-// repoImageCanvas.className = 'filter-canvas';
-// repoImageCanvas.style.position = 'absolute';
 
 var gifPicLinks = (function() {
   var gifHolder = document.getElementsByClassName('gif')[0];
@@ -290,48 +284,16 @@ var gifPicLinks = (function() {
     return pics[id];
   }
 
-  var makeImageTheSource = function(link) {
-    var img = document.getElementsByClassName('gif')[0];
-    // repoImageCanvas.width = img.width;
-    // repoImageCanvas.length = img.length;
-    // repoImageCanvasContext.drawImage(img, 0, 0);
-    // var imgData = repoImageCanvasContext.getImageData(0, 0, 300, 300);
-    // imageFilter(imgData);
-  };
-
-  // var imageFilter = function(imgData) {
-  //   var imageData = imgData.data;
-  //   for (var i = 0; i + 4 < imageData.length; i += 4) {
-  //     imageData[i] = 174;
-  //     imageData[i + 1] = 93;
-  //     imageData[i + 2] = 198;
-  //     imageData[i + 3] = 100;
-  //   }
-    // repoImageCanvasContext.putImageData(imgData, 0, 0);
-  // };
-
   var hovering = function(hyperlink) {
     addEvent('mouseover', hyperlink, function(){
       gifHolder.className = 'gif';
-      // repoImageCanvas.className = 'filter-canvas';
-      // debugger
-
       document.getElementsByClassName('gif')[0].className = 'gif';
       document.getElementsByClassName('gif')[0].className = 'gif ' + hyperlink.getAttribute('id');
-
-      // document.getElementsByClassName('gif')[0].style.background = "url('." + linkPics(hyperlink) + "') #8e5dc6;";
-      // document.getElementsByClassName('gif')[0].style.background = "url('." + linkPics(hyperlink) + "') ";
-      // document.getElementsByClassName('gif')[0].style.background = "url('." + linkPics(hyperlink) + "') rgba(174,93,198,100);";
-      // document.getElementsByClassName('gif')[0].style.backgroundBlendMode = "lighten";
       document.getElementsByClassName('gif-holder')[0].style.visibility = 'visible';
-      gifHolder.src = '';
-      // gifHolder.src = linkPics(hyperlink);
       gifHolder.style.visibility = 'visible';
-      // makeImageTheSource(hyperlink);
     });
     addEvent('mouseout', hyperlink, function(){
-      // gifHolder.className = 'gif fadeout';
-      // repoImageCanvas.className = 'filter-canvas canvas-fadeout';
+      gifHolder.className = 'gif fadeout ' + hyperlink.getAttribute('id');
     });
   };
 

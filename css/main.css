@@ -65,7 +65,7 @@ a:hover {
   width: 300px;
   height: 300px;
   background: url('../img/marquee.gif') rgba(174,93,198,255);
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
 }
 
 .marquee::after {
@@ -77,17 +77,17 @@ a:hover {
   border-radius: 40px;
   overflow: hidden;
   background:
-  radial-gradient(200px circle at 30% 40%, yellow, rgba(255,255,255,0)),
+  radial-gradient(200px circle at 30% 40%, pink, rgba(255,255,255,0)),
   radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
   mix-blend-mode: overlay;
-  opacity: 0.7;
 }
 
 .targa {
+  filter: brightness(1.22);
   width: 300px;
   height: 300px;
   background: url('../img/targa-1.png') rgba(174,93,198,255);
-  background-blend-mode: overlay;
+  background-blend-mode: luminosity;
 }
 
 .targa::after {
@@ -102,7 +102,7 @@ a:hover {
   radial-gradient(200px circle at 30% 40%, yellow, rgba(255,255,255,0)),
   radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
   mix-blend-mode: overlay;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .giffy {
@@ -128,10 +128,11 @@ a:hover {
 }
 
 .webglol {
+  filter: brightness(0.9);
   width: 300px;
   height: 300px;
   background: url('../img/lolcube.gif') rgba(174,93,198,20);
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
 }
 
 .webglol::after {
@@ -143,10 +144,10 @@ a:hover {
   border-radius: 40px;
   overflow: hidden;
   background:
-  radial-gradient(200px circle at 30% 40%, bisque, rgba(255,255,255,0)),
-  radial-gradient(150px circle at 70% 60%, cyan, rgba(255,255,255,0));
+  radial-gradient(200px circle at 30% 40%, tomato, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
   mix-blend-mode: overlay;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .shader {
@@ -165,10 +166,10 @@ a:hover {
   border-radius: 40px;
   overflow: hidden;
   background:
-  radial-gradient(200px circle at 30% 40%, bisque, rgba(255,255,255,0)),
-  radial-gradient(150px circle at 70% 60%, yellow, rgba(255,255,255,0));
-  mix-blend-mode: overlay;
-  opacity: 0.7;
+  radial-gradient(200px circle at 30% 40%, pink, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
+  mix-blend-mode: color-burn;
+  opacity: 0.6;
 }
 
 .filter-canvas {
@@ -254,25 +255,6 @@ a:hover {
 
 .credit {
   color: #5b4193;
-}
-
-.canvas-fadeout {
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-duration: 0.8s;
-  animation-name: canvasfade;
-}
-
-@keyframes canvasfade {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .fadeout {
