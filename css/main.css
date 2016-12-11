@@ -50,6 +50,7 @@ a:hover {
 .gif-holder {
   position: absolute;
   margin-left: 51%;
+  margin-top: -138px;
   z-index: 5;
   visibility: hidden;
 }
@@ -58,6 +59,116 @@ a:hover {
   margin-top: -134px;
   border-radius: 40px;
   overflow: hidden;
+}
+
+.marquee {
+  width: 300px;
+  height: 300px;
+  background: url('../img/marquee.gif') rgba(174,93,198,255);
+  background-blend-mode: multiply;
+}
+
+.marquee::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+  background:
+  radial-gradient(200px circle at 30% 40%, yellow, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+}
+
+.targa {
+  width: 300px;
+  height: 300px;
+  background: url('../img/targa-1.png') rgba(174,93,198,255);
+  background-blend-mode: overlay;
+}
+
+.targa::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+  background:
+  radial-gradient(200px circle at 30% 40%, yellow, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+}
+
+.giffy {
+  width: 300px;
+  height: 300px;
+  background: url('../img/dogPizza.gif') rgba(174,93,198,20);
+  background-blend-mode: luminosity;
+}
+
+.giffy::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+  background:
+  radial-gradient(200px circle at 30% 40%, yellow, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, tomato, rgba(255,255,255,0));
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+}
+
+.webglol {
+  width: 300px;
+  height: 300px;
+  background: url('../img/lolcube.gif') rgba(174,93,198,20);
+  background-blend-mode: multiply;
+}
+
+.webglol::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+  background:
+  radial-gradient(200px circle at 30% 40%, bisque, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, cyan, rgba(255,255,255,0));
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+}
+
+.shader {
+  width: 300px;
+  height: 300px;
+  background: url('../img/bubbles.gif') rgba(174,93,198,20);
+  background-blend-mode: luminosity;
+}
+
+.shader::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+  background:
+  radial-gradient(200px circle at 30% 40%, bisque, rgba(255,255,255,0)),
+  radial-gradient(150px circle at 70% 60%, yellow, rgba(255,255,255,0));
+  mix-blend-mode: overlay;
+  opacity: 0.7;
 }
 
 .filter-canvas {
@@ -74,13 +185,15 @@ a:hover {
   padding: 240px 0 20px;
 }
 
-img {
+.gif {
   display: block;
   margin: 15px auto 0;
   z-index: 300;
 }
 
-.webglol {
+
+
+.paragraph {
   transform: rotate(-0.30deg);
   margin-bottom: 40px;
   text-align: left;
