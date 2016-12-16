@@ -1,14 +1,22 @@
 var hiNerds = (function(){
+  // TODO: make ascii art VP with ˙˚
+  console.log('%c ', 'color: #e5e5e5; padding-top: 100%; padding-bottom: 50%; padding-right: 100%; background: #e5e5e5; font-size: 14px;');
+  console.log('%c ', 'color: #d664bb; padding-bottom: 50%; padding-right: 100%; background: #d664bb; font-size: 14px;');
+  console.log('%c ', 'color: #ae5dc6; padding-bottom: 50%; padding-right: 100%; background: #ae5dc6; font-size: 14px;');
+  console.log('%c ', 'color: #864fad; padding-bottom: 50%; padding-right: 100%; background: #864fad; font-size: 14px;');
+  console.log('%c ', 'color: #5b4193; padding-bottom: 50%; padding-right: 100%; background: #5b4193; font-size: 14px;');
+  console.log('%c ', 'color: #3c2960; padding-bottom: 100%; padding-right: 100%; background: #3c2960; font-size: 14px;');
+  console.log('%c Congratulations!', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
   console.log('');
-  console.log('congratulations!');
+  console.log('%c Your reward for snooping here is my ode to the marquee tag:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
+  console.log('%c https://github.com/vipyne/marquisDeArcaneciel/', 'color: #ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
-  console.log('your reward for snooping here is a link to my super secret old tumblr:');
-  console.log('http://gemintheruff.tumblr.com/');
+  console.log('%c And a link to my super secret old tumblr:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
+  console.log('%c http://gemintheruff.tumblr.com/', 'color: #ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
-  console.log('also, i\'m silly:');
-  console.log('https://vipyne.github.io/getUserMedia_play/');
+  console.log('%c And further proof of whimsy:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
+  console.log('%c https://vipyne.github.io/getUserMedia_play/', 'color:#ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
-  // console.log('check back soon for some sweet ascii art');
 
   // ode to C
   return 0;
@@ -17,7 +25,7 @@ var hiNerds = (function(){
 var all = (function(window, document, undefined){
   console.log('');
   console.log('function hiNerds');
-  console.log('');
+  // console.log('');
 /////////////////////////////
 
 window.location = '#';
@@ -275,7 +283,7 @@ var gifPicLinks = (function() {
   var linkPics = function(link) {
     var id = link.getAttribute('id');
     var pics = {
-      'marquee' : './img/marquee.gif',
+      // 'marquee' : './img/marquee.gif',
       'targa'   : './img/targa-1.png',
       'giffy'   : './img/pizzaDog.gif',
       'webglol' : './img/lolcube.gif',
@@ -298,12 +306,12 @@ var gifPicLinks = (function() {
   };
 
   var allLinks = function() {
-    var marquee = document.getElementById('marquee');
+    // var marquee = document.getElementById('marquee');
     var targa = document.getElementById('targa');
     var giffy = document.getElementById('giffy');
     var webglol = document.getElementById('webglol');
     var shader = document.getElementById('shader');
-    hovering(marquee);
+    // hovering(marquee);
     hovering(targa);
     hovering(giffy);
     hovering(webglol);
