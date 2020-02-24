@@ -330,7 +330,7 @@ gifPicLinks.allLinks();
 /////////////////////////////
 /////////////////////////////
 setTimeout( function subliminalMessage() {
-  window.location = '#___________________________________hey, there...';
+  window.location = encodeURI('#___________________________________hey, there...');
   setTimeout( function removeSubliminalMessage() {
     window.location = '#';
     setTimeout( function secondMessage() {
