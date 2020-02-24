@@ -330,11 +330,11 @@ gifPicLinks.allLinks();
 /////////////////////////////
 /////////////////////////////
 setTimeout( function subliminalMessage() {
-  window.location = encodeURI('#___________________________________hey, there...');
+  window.location =     '#___________________________________hey_there...';
   setTimeout( function removeSubliminalMessage() {
-    window.location = '#';
+    window.location = '#___________________________________';
     setTimeout( function secondMessage() {
-      window.location = '#___________________________________...open the console!';
+      window.location = '#___________________________________open_the_console!';
     }, 1200);
   }, 2000);
 }, 4000);
