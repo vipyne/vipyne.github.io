@@ -167,41 +167,6 @@ for (var i = 0, cPixelLength = cPixel.length; i+4 < cPixelLength; i += 4) {
 }
 topCornerCanvasContext.putImageData(cornerPixels, 0, 0);
 
-// B G   B O T //////////////
-// C O R N E R //////////////
-/////////////////////////////
-/////////////////////////////
-
-var bottomCornerCanvas = document.createElement('canvas');
-bottomCornerCanvas.style.float = 'right';
-bottomCornerCanvas.style.margin = '-200px 0';
-bottomCornerCanvas.width = roundedCornerDim;
-bottomCornerCanvas.height = roundedCornerDim;
-var bottomCornerCanvasContext = bottomCornerCanvas.getContext('2d');
-var allWrapBefore = document.getElementById('all-wrap');
-document.getElementsByClassName('mainy')[0].insertBefore(bottomCornerCanvas, allWrapBefore);
-bottomCornerCanvasContext.globalCompositeOperation = 'source-over';
-bottomCornerCanvasContext.shadowBlur = 0;
-bottomCornerCanvasContext.closePath();
-
-bottomCornerCanvasContext.moveTo(roundedCornerDim, roundedCornerDim);
-bottomCornerCanvasContext.arc(0, 0, roundedCornerDim, 2 * Math.PI, false);
-bottomCornerCanvasContext.clip();
-
-bottomCornerCanvasContext.fillStyle = 'rgba(255, 255, 255, 255)';
-bottomCornerCanvasContext.fillRect(0, 0, roundedCornerDim, roundedCornerDim);
-
-var cornerPixels = bottomCornerCanvasContext.getImageData(0, 0, roundedCornerDim, roundedCornerDim);
-var cPixel = cornerPixels.data;
-
-for (var i = 0, cPixelLength = cPixel.length; i+4 < cPixelLength; i += 4) {
-  cPixel[i] = 229;  // just make them all white...
-  cPixel[i + 1] = 229;
-  cPixel[i + 2] = 229;
-  cPixel[i + 3] = Math.abs(255 - cPixel[i + 3]); // only show the ones we want
-}
-bottomCornerCanvasContext.putImageData(cornerPixels, 0, 0);
-
 // L I N K S ////////////////
 /////////////////////////////
 /////////////////////////////
