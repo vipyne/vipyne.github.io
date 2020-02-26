@@ -1,24 +1,17 @@
 var hiNerds = (function(){
   // TODO: make ascii art VP with ˙˚
-  console.log('%c ', 'color: #e5e5e5; padding-top: 100%; padding-bottom: 50%; padding-right: 100%; background: #e5e5e5; font-size: 14px;');
-  console.log('%c ', 'color: #d664bb; padding-bottom: 50%; padding-right: 100%; background: #d664bb; font-size: 14px;');
-  console.log('%c ', 'color: #ae5dc6; padding-bottom: 50%; padding-right: 100%; background: #ae5dc6; font-size: 14px;');
-  console.log('%c ', 'color: #864fad; padding-bottom: 50%; padding-right: 100%; background: #864fad; font-size: 14px;');
-  console.log('%c ', 'color: #5b4193; padding-bottom: 50%; padding-right: 100%; background: #5b4193; font-size: 14px;');
-  console.log('%c ', 'color: #3c2960; padding-bottom: 100%; padding-right: 100%; background: #3c2960; font-size: 14px;');
   console.log('%c Congratulations!', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
   console.log('');
-  console.log('%c Your reward for snooping here is my ode to the marquee tag:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
+  console.log('%c Your reward for snooping here is an old ode to the marquee tag:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
   console.log('%c https://github.com/vipyne/marquisDeArcaneciel/', 'color: #ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
   console.log('%c And a link to my super secret old tumblr:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
   console.log('%c http://gemintheruff.tumblr.com/', 'color: #ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
-  console.log('%c And further proof of whimsy:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
-  console.log('%c https://vipyne.github.io/getUserMedia_play/', 'color:#ae5dc6; background: #3c2960; font-size: 12px;');
+  console.log('%c You can play tic-tac-toe here:', 'color: #e5e5e5; background: #3c2960; font-size: 12px;');
+  console.log('%c http://vipyne.github.io/100-days/5/index.html', 'color:#ae5dc6; background: #3c2960; font-size: 12px;');
   console.log('');
 
-  // ode to C
   return 0;
 })
 
