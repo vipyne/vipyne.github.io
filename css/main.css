@@ -43,6 +43,12 @@ a {
   font-size: 100%;
 }
 
+span {
+  color: yellow;
+  display: inline-block;
+  transform: rotate(-3deg);
+}
+
 a:hover {
   color: #d664bb;
 }
